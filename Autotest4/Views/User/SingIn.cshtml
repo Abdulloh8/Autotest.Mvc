@@ -1,0 +1,18 @@
+﻿@model SingINUser
+<p>SingIn</p>
+
+<form class="row g-3" style="width: 300px" asp-controller="User" asp-action="SingIn">
+    <div>
+
+        <input name="UserName" class="form-control" asp-for="UserName" type="text" placeholder="Username" />
+        <span class="link-danger" asp-validation-for="UserName"></span>
+    </div>
+    <div>
+        <input name="Password" class="form-control" asp-for="Password" type="text" placeholder="parol" />
+        <span class="link-danger" asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <button style="width: 285px;" class="btn btn-outline-primary" type="submit">Sing Up</button>
+    </div>
+
+</form>

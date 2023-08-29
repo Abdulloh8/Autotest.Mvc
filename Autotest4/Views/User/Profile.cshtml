@@ -1,0 +1,47 @@
+﻿@using Autotest4.Services
+@using Autotest4.Repositories
+@inject NatijaRepository natijaRepository
+@model User
+
+<p>Profile</p>
+
+<img style="width: 300px; height: 300px;" src="@Model.PhotoPath" />
+
+<h5>UserName @Model.UserName</h5>
+
+
+<a asp-controller="User" asp-action="setting"><button class="btn btn-outline-primary mb-5">setting</button></a>
+
+
+@{
+    List<Natija> natijas = natijaRepository.GetNatija(Model.Id);
+    
+    <h3>Ticket Resualt</h3>
+    <br />
+    
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Ticket Index</th>
+                    <th scope="col">Correct Count</th>
+                </tr>
+            <thead>
+     
+            <tbody>
+                @foreach (var item in natijas)
+                {
+                    <tr>
+                        <th scope="row">#</th>
+                    <th scope="row"></th>
+                        <td>@(item.TisketId + 1)</td>
+                        <td>@(item.correctCount)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    
+    
+
+
+}

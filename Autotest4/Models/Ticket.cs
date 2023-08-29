@@ -1,0 +1,77 @@
+﻿namespace Autotest4.Models
+{
+    public class Ticket
+    {
+        public string Id { get; set; }
+        public int Ticket1 { get; set; }
+        public int Ticket2 { get; set; }
+        public int Ticket3 { get; set; }
+        public int Ticket4 { get; set; }
+        public int Ticket5 { get; set; }
+        public int Ticket6 { get; set; }
+        public int Ticket7 { get; set; }
+        public int Ticket8 { get; set; }
+        public int Ticket9 { get; set; }
+        public int Ticket10 { get; set; }
+        public int Ticket11 { get; set; }
+        public int Ticket12 { get; set; }
+        public int Ticket13 { get; set; }
+        public int Ticket14 { get; set; }
+        public int Ticket15 { get; set; }
+        public int Ticket16 { get; set; }
+        public int Ticket17 { get; set; }
+        public int Ticket18 { get; set; }
+        public int Ticket19 { get; set; }
+        public int Ticket20 { get; set; }
+        public int Ticket21 { get; set; }
+        public int Ticket22 { get; set; }
+        public int Ticket23 { get; set; }
+        public int Ticket24 { get; set; }
+        public int Ticket25 { get; set; }
+        public int Ticket26 { get; set; }
+        public int Ticket27 { get; set; }
+        public int Ticket28 { get; set; }
+        public int Ticket29 { get; set; }
+        public int Ticket30 { get; set; }
+        public int Ticket31 { get; set; }
+        public int Ticket32 { get; set; }
+        public int Ticket33 { get; set; }
+        public int Ticket34 { get; set; }
+        public int Ticket35 { get; set; }
+        public int Ticket36 { get; set; }
+        public int Ticket37 { get; set; }
+        public int Ticket38 { get; set; }
+        public int Ticket39 { get; set; }
+        public int Ticket40 { get; set; }
+        public int Ticket41 { get; set; }
+        public int Ticket42 { get; set; }
+        public int Ticket43 { get; set; }
+        public int Ticket44 { get; set; }
+        public int Ticket45 { get; set; }
+        public int Ticket46 { get; set; }
+        public int Ticket47 { get; set; }
+        public int Ticket48 { get; set; }
+        public int Ticket49 { get; set; }
+        public int Ticket50 { get; set; }
+        public int Ticket51 { get; set; }
+        public int Ticket52 { get; set; }
+        public int Ticket53 { get; set; }
+        public int Ticket54 { get; set; }
+        public int Ticket55 { get; set; }
+        public int Ticket56 { get; set; }
+        public int Ticket57 { get; set; }
+        public int Ticket58 { get; set; }
+        public int Ticket59 { get; set; }
+        public int Ticket60 { get; set; }
+        public int Ticket61 { get; set; }
+        public int Ticket62 { get; set; }
+        public int Ticket63 { get; set; }
+        public int Ticket64 { get; set; }
+        public int Ticket65 { get; set; }
+        public int Ticket66 { get; set; }
+        public int Ticket67 { get; set; }
+        public int Ticket68 { get; set; }
+        public int Ticket69 { get; set; }
+        public int Ticket70 { get; set; }
+    }
+}

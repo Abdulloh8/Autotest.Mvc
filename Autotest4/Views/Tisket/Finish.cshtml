@@ -1,0 +1,12 @@
+﻿
+@{
+    int t = ViewBag.t;
+    int c = ViewBag.c;
+    <h2>Ticket @(t+1)</h2>
+    <h3>Correct count @c</h3>
+    <br />
+
+    <a asp-controller="Tisket" asp-action="Index"><button class="btn btn-outline-success">Tickets</button></a>
+
+
+}

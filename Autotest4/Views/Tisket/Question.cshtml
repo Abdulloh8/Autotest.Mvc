@@ -1,0 +1,66 @@
+﻿
+@{
+    int x = ViewBag.t;
+    int y = ViewBag.q;
+    List<bool?>? f = new List<bool?>();
+    f = ViewBag.f;
+
+
+    for (int i = 0; i < 10; i++)
+    {
+        string w = "";
+        if (f[i] == true)
+        {
+            w = "btn btn-success";
+        }
+        else if (f[i] == false)
+        {
+            w = "btn btn-danger";
+        }
+        else
+        {
+            w = "btn btn-outline-primary";
+        }
+        <a asp-controller="Tisket" asp-action="I"  asp-route-id="@(x + i)"><button class="@w mb-3">@(i + 1)</button></a>
+    }
+    <br />
+
+    <h3>@y</h3>
+
+    QuestionModel question = ViewBag.Question;
+
+
+
+    if (question.Media.Exist)
+    {
+        var imageLink = $"/Autotest/{question.Media.Name}.png";
+
+        <img alt="Question image" src="@imageLink" />
+    }
+
+    <h3>@question.Id. @question.Question</h3>
+    <br />
+
+    for (int i = 0; i < question.choices.Count; i++)
+    {
+
+        <a asp-controller="Tisket" asp-action="UpTi" asp-route-id="@(question.Id)" asp-route-count="@i" asp-route-c="@(question.choices[i].Answer)" >
+            <button class="btn btn-outline-primary mb-3">@(i + 1). @question.choices[i].Text</button>
+            </a>
+        
+
+        <br />
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}

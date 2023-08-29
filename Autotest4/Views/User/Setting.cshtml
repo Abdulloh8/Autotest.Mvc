@@ -1,0 +1,49 @@
+﻿<h3>setting</h3>
+
+@{
+    string til = ViewBag.til;
+}
+
+<a asp-controller="User" asp-action="EditUserName"><button class="btn btn-outline-primary mb-5">Edit UserName</button></a>
+<a asp-controller="User" asp-action="EditPassword"><button class="btn btn-outline-primary mb-5">Edit password</button></a>
+<a asp-controller="User" asp-action="Exir"><button style="width: 130px" class="btn btn-outline-warning mb-5">Exit</button></a>
+<a asp-controller="User" asp-action="DeleteAcaunt"><button class="btn btn-outline-danger mb-5">Delete acaunt</button></a>
+<br />
+
+@{
+    <div class="btn-group" role="group" aria-label="Basic example">
+        @if (til == "uz")
+        {
+            <a asp-controller="User" asp-action="Til" asp-route-til="uz"><button type="button" class="btn btn-info">Uzkek</button></a>
+        }
+        else
+        {
+            <a asp-controller="User" asp-action="Til" asp-route-til="uz"><button type="button" class="btn btn-outline-info">Uzkek</button></a>
+        }
+        @if (til == "ki")
+        {
+            <a asp-controller="User" asp-action="Til" asp-route-til="ki"><button type="button" class="btn btn-info">Kiril</button></a>
+        }
+        else
+        {
+            <a asp-controller="User" asp-action="Til" asp-route-til="ki"><button type="button" class="btn btn-outline-info">Kiril</button></a>
+        }
+        @if (til == "ru")
+        {
+            <a asp-controller="User" asp-action="Til" asp-route-til="ru"><button type="button" class="btn btn-info">Rus</button></a>
+        }
+        else
+        {
+            <a asp-controller="User" asp-action="Til" asp-route-til="ru"><button type="button" class="btn btn-outline-info">Rus</button></a>
+        }
+        
+        
+
+        
+        
+    </div>
+}
+
+
+
+

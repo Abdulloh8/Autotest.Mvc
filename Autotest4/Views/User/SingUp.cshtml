@@ -1,0 +1,22 @@
+﻿@model SingUpUser
+
+<h3>SingUp</h3>
+
+<form class="row g-3" style="width: 300px" asp-controller="User" asp-action="SingUp" enctype="multipart/form-data">
+    <div>
+        <input name="UserName" class="form-control" type="text" type="text" asp-for="UserName" placeholder="Username" />
+        <span class="link-danger" asp-validation-for="UserName"></span>
+    </div>
+    <div>
+        <input name="Password" class="form-control" type="text" asp-for="Password" placeholder="parol" />
+        <span class="link-danger" asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <input name="Photo" class="form-control" type="file" asp-for="Photo" placeholder="Username" />
+        <span class="link-danger" asp-validation-for="Photo"></span>
+    </div>
+    <div>
+        <button style="width: 285px;" class="btn btn-outline-primary" type="submit">Sing Up</button>
+    </div>
+
+</form>
